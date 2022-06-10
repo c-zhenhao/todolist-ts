@@ -19,12 +19,18 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
     setText("");
   };
 
+  const handleAnotherClick = (event: any) => {
+    console.log(event);
+  };
+
   return (
     <form>
       <input type="text" onChange={handleChange} />
       <button type="submit" onClick={handleClick}>
         Add Todo
       </button>
+      <button onClick={(event) => console.log(event)}>another button</button>
+      <button onClick={handleAnotherClick}>yet another button</button>
     </form>
   );
 };
