@@ -20,6 +20,7 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
   };
 
   const handleAnotherClick = (event: any) => {
+    event.preventDefault();
     console.log(event);
   };
 
@@ -29,7 +30,14 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
       <button type="submit" onClick={handleClick}>
         Add Todo
       </button>
-      <button onClick={(event) => console.log(event)}>another button</button>
+      <button
+        onClick={(event) => {
+          event.preventDefault();
+          console.log(event);
+        }}
+      >
+        another button
+      </button>
       <button onClick={handleAnotherClick}>yet another button</button>
     </form>
   );

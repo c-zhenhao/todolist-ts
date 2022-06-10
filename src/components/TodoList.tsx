@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 import { TodoListItem } from "./TodoListItem";
 
 interface Props {
@@ -10,7 +11,7 @@ export const TodoList: React.FC<Props> = ({ todos, toggleTodo }) => {
   return (
     <ul>
       {todos.map((todo) => (
-        <TodoListItem key={todo.text} todo={todo} toggleTodo={toggleTodo} />
+        <TodoListItem key={uuidv4()} todo={todo} toggleTodo={toggleTodo} />
       ))}
     </ul>
   );
