@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+# see if this works for github pages
+# /build
 
 # misc
 .DS_Store
