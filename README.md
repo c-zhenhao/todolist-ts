@@ -4,7 +4,11 @@ https://typeofnan.dev/your-first-react-typescript-project-todo-app/
 
 other help:
 trying to find whats the react parameter for event: https://bobbyhadz.com/blog/react-parameter-event-implicitly-has-an-any-type#:~:text=The%20React.,event%20on%20an%20input%20element.
+
 declaration of module types: https://bobbyhadz.com/blog/typescript-could-not-find-a-declaration-file-for-module-uuid#:~:text=The%20error%20%22could%20not%20find,%2DD%20%40types%2Fuuid%20.&text=Copied!
+
+trying gh pages deployment
+https://github.com/gitname/react-gh-pages
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
